@@ -3,11 +3,12 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 val springfoxVersion by extra { "3.0.0" }
 
 plugins {
+    val kotlinVersion = "1.4.10"
     id("org.springframework.boot") version "2.3.4.RELEASE"
     id("io.spring.dependency-management") version "1.0.10.RELEASE"
-    kotlin("jvm") version "1.4.10"
-    kotlin("plugin.spring") version "1.4.10"
-    kotlin("plugin.jpa") version "1.4.10"
+    kotlin("jvm") version "$kotlinVersion"
+    kotlin("plugin.spring") version "$kotlinVersion"
+    kotlin("plugin.jpa") version "$kotlinVersion"
 }
 
 group = "br.com.edersystems"
