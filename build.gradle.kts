@@ -6,9 +6,9 @@ plugins {
     val kotlinVersion = "1.4.10"
     id("org.springframework.boot") version "2.3.4.RELEASE"
     id("io.spring.dependency-management") version "1.0.10.RELEASE"
-    kotlin("jvm") version "$kotlinVersion"
-    kotlin("plugin.spring") version "$kotlinVersion"
-    kotlin("plugin.jpa") version "$kotlinVersion"
+    kotlin("jvm") version kotlinVersion
+    kotlin("plugin.spring") version kotlinVersion
+    kotlin("plugin.jpa") version kotlinVersion
 }
 
 group = "br.com.edersystems"
